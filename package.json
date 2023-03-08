@@ -6,7 +6,7 @@
   "homepage": "https://npribeiro.github.io/resume/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=./,
+    "build": "vite build --base=./",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
