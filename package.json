@@ -3,7 +3,7 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://npribeiro.github.io/",
+  "homepage": "npribeiro.github.io",
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=./",
