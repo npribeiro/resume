@@ -23,6 +23,9 @@ import { Skills } from '../../components/skills'
 
 import { Divider } from '@chakra-ui/react'
 
+import { LanguageSwitch } from '../../components/languageSwitch'
+import { useTranslation } from 'react-i18next'
+
 const WavingHand = () => {
   return (
     <HandWaving color="#B596E5" weight="duotone">
@@ -40,6 +43,8 @@ const WavingHand = () => {
 }
 
 export function Home() {
+  const { t } = useTranslation()
+
   return (
     <HomeContainer>
       <PersonalCard>
@@ -48,49 +53,46 @@ export function Home() {
         </ImageContainer>
         <header>
           <p>
-            Olá! <WavingHand />
+            {t('personal.subtitle.one')} <WavingHand />
           </p>
-          <p>
-            Sou Nathalia, tenho 26 anos e mudei recentemente para Portugal.
-            Possuo Autorização de Residência, NIF e NISS. Procuro oportunidades
-            de trabalho onde eu possa aprender e agregar para a empresa. Fico a
-            diposição!
-          </p>
+          <p>{t('personal.subtitle.two')}</p>
         </header>
 
         <body>
           <p>
+            <NavigationArrow size={18} />
+            &nbsp;
+            <a href="https://goo.gl/maps/tFagtJgZVkGWJfmCA">
+              {t('body.title.one')}
+            </a>
+          </p>
+
+          <p>
             <PhoneCall size={18} />
             &nbsp;
-            <a href="https://wa.me/351915493564">+351 915 493 564</a>
+            <a href="https://wa.me/351915493564">{t('body.title.two')}</a>
           </p>
 
           <p>
             <EnvelopeSimple size={18} />
             &nbsp;
             <a href="mailto:ribeiropascoaln@gmail.com">
-              ribeiropascoaln@gmail.com
+              {t('body.title.three')}
             </a>
           </p>
 
           <p>
             <LinkedinLogo size={18} />
             &nbsp;
-            <a href="https://www.linkedin.com/in/nathaliapr/">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/nathaliapr/">
+              {t('body.title.four')}
+            </a>
           </p>
 
           <p>
             <GithubLogo size={18} />
             &nbsp;
-            <a href="https://github.com/npribeiro">GitHub</a>
-          </p>
-
-          <p>
-            <NavigationArrow size={18} />
-            &nbsp;
-            <a href="https://goo.gl/maps/tFagtJgZVkGWJfmCA">
-              Sacavém, Loures, PT
-            </a>
+            <a href="https://github.com/npribeiro">{t('body.title.five')}</a>
           </p>
         </body>
 
@@ -106,6 +108,7 @@ export function Home() {
         <Education />
         <Language />
       </InfoContainer>
+      <LanguageSwitch />
     </HomeContainer>
   )
 }

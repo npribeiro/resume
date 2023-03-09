@@ -1,40 +1,36 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { InfosContainer } from './styles'
 
 export function Jobs() {
   const [hidden, setHidden] = useState(true)
+  const { t } = useTranslation()
   return (
     <InfosContainer>
-      <button onClick={() => setHidden((s) => !s)}>EXPERIÊNCIA +</button>
+      <button onClick={() => setHidden((s) => !s)}>{t('work.title')} +</button>
 
       {!hidden ? (
         <>
-          <h2>ADVOGADA JR</h2>
-          <p>Denis Wingter Advogados Associados </p>
-          <p>06/2021 - 04/2022 </p>
-          <p> - Efetuação de processos, cível e família </p>
-          <p> - Efetuação de contratos </p>
-          <p> - Acompanhamento e atenção diária à clientes</p>
+          <h2>{t('work.adv')}</h2>
+          <p>{t('work.advdescr.one')}</p>
+          <p>{t('work.advdescr.two')}</p>
+          <p>{t('work.advdescr.three')}</p>
+          <p>{t('work.advdescr.four')}</p>
+          <p>{t('work.advdescr.five')}</p>
 
-          <h2>ESTAGIÁRIA</h2>
-          <p>Universidade Estadual de Campinas (UNICAMP) </p>
-          <p>04/2018 - 04/2019</p>
-          <p>
-            - Organização de documentos e acompanhamento de processos do
-            Registro de Preços
-          </p>
-          <p> - Aplicação de penalidades e análise de defesa </p>
-          <p> - Contato com fornecedores</p>
+          <h2>{t('work.intern1')}</h2>
+          <p>{t('work.intern1descr.one')}</p>
+          <p>{t('work.intern1descr.two')}</p>
+          <p>{t('work.intern1descr.three')}</p>
+          <p>{t('work.intern1descr.four')}</p>
+          <p>{t('work.intern1descr.five')}</p>
 
-          <h2>ESTAGIÁRIA</h2>
-          <p>Centro De Pesquisa e Desenvolvimento (CPqD) </p>
-          <p>07/2014 - 07/2016 </p>
-          <p> - Análise, edição e segmentação de arquivos de áudio gravados </p>
-          <p>
-            {' '}
-            - Contato com clientes para eventuais esclarecimentos de dúvidas{' '}
-          </p>
-          <p> - Programação simples</p>
+          <h2>{t('work.intern2')}</h2>
+          <p>{t('work.intern2descr.one')}</p>
+          <p>{t('work.intern2descr.two')}</p>
+          <p>{t('work.intern2descr.three')}</p>
+          <p>{t('work.intern2descr.four')}</p>
+          <p>{t('work.intern2descr.five')}</p>
         </>
       ) : null}
     </InfosContainer>

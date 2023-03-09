@@ -13,7 +13,6 @@ export const InfosContainer = styled.div`
     margin-top: 1rem;
     display: flex;
     flex-direction: row;
-    
   }
 
   button {

@@ -1,21 +1,25 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { InfosContainer } from './styles'
 
 export function Education() {
   const [hidden, setHidden] = useState(true)
+  const { t } = useTranslation()
   return (
     <InfosContainer>
-      <button onClick={() => setHidden((s) => !s)}>FORMAÇÃO +</button>
+      <button onClick={() => setHidden((s) => !s)}>
+        {t('education.title')} +
+      </button>
 
       {!hidden ? (
         <>
-          <h2>BACHAREL EM DIREITO</h2>
-          <p>UNISAL Centro Salesiano de São Paulo </p>
-          <p>2015 / 2020</p>
+          <h2>{t('education.bach')}</h2>
+          <p>{t('education.bachdescr.one')}</p>
+          <p>{t('education.bachdescr.two')}</p>
 
-          <h2>TÉCNICO EM INFORMÁTICA P/ INTERNET</h2>
-          <p>CEMEP Osmar Passarelli Silveira</p>
-          <p>2011 / 2013</p>
+          <h2>{t('education.tec')}</h2>
+          <p>{t('education.tecdescr.one')}</p>
+          <p>{t('education.tecdescr.two')}</p>
         </>
       ) : null}
     </InfosContainer>
