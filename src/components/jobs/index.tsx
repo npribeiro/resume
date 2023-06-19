@@ -9,7 +9,7 @@ export function Jobs() {
     <InfosContainer>
       <button onClick={() => setHidden((s) => !s)}>{t('work.title')} +</button>
 
-      {!hidden ? (
+      {hidden ? (
         <>
           <h2>{t('work.adv')}</h2>
           <p>{t('work.advdescr.one')}</p>
