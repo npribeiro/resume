@@ -1,4 +1,5 @@
 import {
+  Divider,
   HomeContainer,
   ImageContainer,
   InfoContainer,
@@ -16,15 +17,14 @@ import {
 
 import Foto from '../../assets/foto.jpg'
 
-import { Education } from '../../components/education'
 import { Jobs } from '../../components/jobs'
 import { Language } from '../../components/language'
 import { Skills } from '../../components/skills'
 
-import { Divider } from '@chakra-ui/react'
-
 import { LanguageSwitch } from '../../components/languageSwitch'
 import { useTranslation } from 'react-i18next'
+import { Education } from '../../components/education'
+import { Courses } from '../../components/courses'
 
 const WavingHand = () => {
   return (
@@ -99,7 +99,7 @@ export function Home() {
         <Skills />
       </PersonalCard>
 
-      <Divider orientation="vertical" />
+      <Divider />
 
       <InfoContainer>
         <h1>NATHALIA PASCOAL RIBEIRO</h1>
@@ -107,6 +107,7 @@ export function Home() {
         <Jobs />
         <Education />
         <Language />
+        <Courses />
       </InfoContainer>
       <LanguageSwitch />
     </HomeContainer>

@@ -2,13 +2,13 @@ export const portuguese = {
   personal: {
     subtitle: {
       one: 'Olá',
-      two: 'Meu nome é Nathalia, tenho 26 anos e me mudei recentemente para Portugal. Estou iniciando uma nova carreira como Desenvolvedora Front-End e estou procurando por boas oportunidades de me desenvolver e ajudar a empresa a fazer o mesmo',
+      two: 'Meu nome é Nathalia, tenho 27 anos e me mudei recentemente para Portugal. Estou iniciando uma nova carreira como Desenvolvedora Front-End e estou procurando por boas oportunidades de me desenvolver e ajudar a empresa a fazer o mesmo.',
     },
   },
 
   body: {
     title: {
-      one: 'Sacavém, Loures, PT',
+      one: 'Algés, Oeiras, PT',
       two: '+351 915 493 564',
       three: 'ribeiropascoaln@gmail.com',
       four: 'LinkedIn',
@@ -82,5 +82,14 @@ export const portuguese = {
       two: 'Inglês',
       three: 'Francês',
     },
+  },
+
+  courses: {
+    title: 'CURSOS',
+    subtitle1: 'IGNITE, ROCKETSEAT',
+    descr1: 'Aprofundamento em React JS.',
+    subtitle2: 'DESENVOLVEDOR FULL STACK, UDEMY',
+    descr2:
+      'Fundamentos do HTML, CSS, Bootstrap, JavaScript, JQuery, PHP, POO e MySQL.',
   },
 }

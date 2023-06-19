@@ -87,8 +87,15 @@ export const InfoContainer = styled.section`
   font-size: 30px;
 
   h1 {
+    font-size: 42px;
     :hover {
       color: ${({ theme }) => theme['base-violet']};
     }
   }
+`
+
+export const Divider = styled.div`
+  border-left: 2px solid black;
+  height: 75rem;
+  margin: 3rem 1rem 3rem 1rem;
 `
