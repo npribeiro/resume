@@ -16,6 +16,9 @@ export const HomeContainer = styled.div`
   @media (max-width: 720px) {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    left: 40%;
   }
 `
 export const PersonalCard = styled.div`
@@ -68,6 +71,11 @@ export const ImageContainer = styled.div`
       transform: scale(1.3);
     }
   }
+
+  @media (max-width: 720px) {
+    align-items: center;
+    margin-left: 2.2rem;
+  }
 `
 
 export const InfoContainer = styled.section`
@@ -92,10 +100,41 @@ export const InfoContainer = styled.section`
       color: ${({ theme }) => theme['base-violet']};
     }
   }
+
+  @media (max-width: 720px) {
+    width: 22rem;
+    height: 100%;
+
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-bottom: 2rem;
+    padding-right: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    background-color: ${({ theme }) => theme['base-profile']};
+
+    h1 {
+      font-size: 30px;
+      text-align: center;
+      :hover {
+        color: ${({ theme }) => theme['base-violet']};
+      }
+    }
+  }
 `
 
 export const Divider = styled.div`
   border-left: 2px solid black;
   height: 75rem;
   margin: 3rem 1rem 3rem 1rem;
+
+  @media (max-width: 720px) {
+    border-left: 0px solid black;
+    border-bottom: 2px solid black;
+    height: 1px;
+    width: 300px;
+    margin: 2rem 0rem 2rem 2rem;
+  }
 `

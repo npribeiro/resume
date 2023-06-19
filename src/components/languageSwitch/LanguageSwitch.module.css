@@ -1,36 +1,41 @@
-.select {
-  display: flex;
-
-  border: none;
-  border-radius: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 25px;
-  height: 25px;
-  transition: background-image 0.3s ease-in-out;
-  margin-top: 20px;
-  margin-right: 20px;
-
-  appearance: none;
-  color: transparent;
-}
-
-.option {
-  font-size: 14px;
-  font-family: 'Mulish', sans-serif;
-  color: #000000;
-
-  height: 50px;
-  padding: 15px;
-}
-
-.option:hover {
-  color: #b596e5;
-}
-
 .custom-select {
   position: relative;
+  color: #fff;
+}
+
+select {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  margin: 0 10px 0 0;
+  color: #ec6f66;
+  width: auto;
+  padding: 10px;
+  height: 10px;
+  cursor: pointer;
+  background: url(http://sharpik.com/wip/cuteselect/arrow.png) 295px 12px
+    no-repeat;
+
+  @media (max-width: 720px) {
+    right: 27%;
+  }
+}
+
+select option {
+  background-color: white;
+  color: gray;
+  width: 310px;
+  padding: 10px 15px;
+  height: 20px;
+  cursor: pointer;
+}
+
+select option:hover {
+  padding-left: 25px;
+  width: 270px;
+  color: #ec6f66;
 }
 
 .en {

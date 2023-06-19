@@ -47,6 +47,7 @@ export function Home() {
 
   return (
     <HomeContainer>
+      <LanguageSwitch />
       <PersonalCard>
         <ImageContainer>
           <img src={Foto} alt="" />
@@ -109,7 +110,6 @@ export function Home() {
         <Language />
         <Courses />
       </InfoContainer>
-      <LanguageSwitch />
     </HomeContainer>
   )
 }
