@@ -13,7 +13,7 @@ export const HomeContainer = styled.div`
 
   background-color: ${({ theme }) => theme.white};
 
-  @media (max-width: 440px) {
+  @media screen and (max-width: 440px) {
     width: max-content;
     height: max-content;
     flex-direction: column;
@@ -73,7 +73,7 @@ export const ImageContainer = styled.div`
     }
   }
 
-  @media (max-width: 440px) {
+  @media screen and (max-width: 440px) {
     align-items: center;
   }
 `
@@ -101,7 +101,7 @@ export const InfoContainer = styled.section`
     }
   }
 
-  @media (max-width: 440px) {
+  @media screen and (max-width: 440px) {
     width: 20rem;
 
     padding-top: 2rem;
@@ -121,7 +121,7 @@ export const Divider = styled.div`
   height: 75rem;
   margin: 3rem 1rem 3rem 1rem;
 
-  @media (max-width: 440px) {
+  @media screen and (max-width: 440px) {
     border-left: 0px solid black;
     border-bottom: 2px solid black;
     height: 1px;
