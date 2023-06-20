@@ -20,6 +20,7 @@ export const HomeContainer = styled.div`
     align-items: center;
     margin: 1rem;
     left: 47%;
+    display: inline-block;
   }
 `
 export const PersonalCard = styled.div`
@@ -115,6 +116,7 @@ export const InfoContainer = styled.section`
   }
 
   @media screen and (max-width: 440px) {
+    display: inline-block;
     width: 20rem;
 
     padding-top: 3rem;
