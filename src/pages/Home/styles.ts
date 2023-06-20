@@ -13,12 +13,13 @@ export const HomeContainer = styled.div`
 
   background-color: ${({ theme }) => theme.white};
 
-  @media (max-width: 720px) {
+  @media (max-width: 440px) {
+    width: max-content;
+    height: max-content;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-left: 1rem;
-    left: 40%;
+    margin: 1rem;
+    left: 47%;
   }
 `
 export const PersonalCard = styled.div`
@@ -72,9 +73,8 @@ export const ImageContainer = styled.div`
     }
   }
 
-  @media (max-width: 720px) {
+  @media (max-width: 440px) {
     align-items: center;
-    margin-left: 2.2rem;
   }
 `
 
@@ -101,26 +101,17 @@ export const InfoContainer = styled.section`
     }
   }
 
-  @media (max-width: 720px) {
-    width: 22rem;
-    height: 100%;
+  @media (max-width: 440px) {
+    width: 20rem;
 
     padding-top: 2rem;
-    padding-left: 3rem;
+    padding-left: 2rem;
     padding-bottom: 2rem;
     padding-right: 1rem;
-
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    background-color: ${({ theme }) => theme['base-profile']};
 
     h1 {
       font-size: 30px;
       text-align: center;
-      :hover {
-        color: ${({ theme }) => theme['base-violet']};
-      }
     }
   }
 `
@@ -130,7 +121,7 @@ export const Divider = styled.div`
   height: 75rem;
   margin: 3rem 1rem 3rem 1rem;
 
-  @media (max-width: 720px) {
+  @media (max-width: 440px) {
     border-left: 0px solid black;
     border-bottom: 2px solid black;
     height: 1px;

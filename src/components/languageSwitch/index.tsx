@@ -2,7 +2,7 @@ import classNames from 'classnames'
 import { changeLanguage } from 'i18next'
 import { ChangeEvent } from 'react'
 import { useTranslation } from 'react-i18next'
-import styles from './LanguageSwitch.module.css'
+import styles from './LanguageSwitch.module.scss'
 
 export const LanguageSwitch = () => {
   const { i18n } = useTranslation()
@@ -13,14 +13,16 @@ export const LanguageSwitch = () => {
   }
 
   return (
-    <div className="custom-select">
+    <div className="select">
       <select
         value={language}
         onChange={handleLanguageChange}
         className={classNames(styles.select, styles[language])}
       >
-        <option value="pt">Português</option>
-        <option value="en">English</option>
+        <option selected value="pt">
+          Português
+        </option>
+        <option value="en">English </option>
       </select>
     </div>
   )

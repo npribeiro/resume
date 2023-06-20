@@ -1,0 +1,40 @@
+$glass: rgba(255, 255, 255, 0.2);
+$glass-icon: rgba(255, 255, 255, 0.3);
+$gradient: linear-gradient(35deg, red, purple);
+$option: #B596E5;
+
+
+
+select {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  appearance: none;
+  border: 0;
+  outline: 0;
+  
+  
+  /* Personalize */
+  width: auto;
+  height: 2em;
+  padding: 0 1em 0 1em;
+  margin:0.5em;
+  color: #000;
+  border-radius: 0.25em;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  background-color: $option;
+ 
+  
+
+  /* <option> colors */
+  option {
+    color: gray;
+    }
+  
+  @media (max-width: 440px) {
+    right: 1%;
+  }
+}
