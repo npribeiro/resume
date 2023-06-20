@@ -59,6 +59,7 @@ Error generating stack: `+i.message+`
     align-items: center;
     margin: 1rem;
     left: 47%;
+    display: inline-block;
   }
 `,Jb=Nt.div`
   width: 22rem;
@@ -149,6 +150,7 @@ Error generating stack: `+i.message+`
   }
 
   @media screen and (max-width: 440px) {
+    display: inline-block;
     width: 20rem;
 
     padding-top: 3rem;
