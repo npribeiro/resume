@@ -34,6 +34,7 @@ export const PersonalCard = styled.div`
   display: flex;
   flex-direction: column;
   gap: 32px;
+  position: relative;
 
   background-color: ${({ theme }) => theme['base-profile']};
 
@@ -99,6 +100,7 @@ export const InfoContainer = styled.section`
   padding-right: 3rem;
 
   display: flex;
+  position: relative;
   flex-direction: column;
   gap: 32px;
   background-color: ${({ theme }) => theme['base-profile']};
@@ -131,12 +133,16 @@ export const Divider = styled.div`
   border-left: 2px solid black;
   height: 75rem;
   margin: 3rem 1rem 3rem 1rem;
+  display: flex;
+  position: relative;
 
   @media screen and (max-width: 440px) {
+    display: flex;
+    position: relative;
     border-left: 0px solid black;
     border-bottom: 2px solid black;
     height: 1px;
     width: 300px;
-    margin: 2rem 0rem 2rem 2rem;
+    margin: 2rem 2rem 2rem 2rem;
   }
 `
