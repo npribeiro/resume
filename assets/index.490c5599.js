@@ -52,7 +52,7 @@ Error generating stack: `+i.message+`
 
   background-color: ${({theme:e})=>e.white};
 
-  @media (max-width: 440px) {
+  @media screen and (max-width: 440px) {
     width: max-content;
     height: max-content;
     flex-direction: column;
@@ -109,7 +109,7 @@ Error generating stack: `+i.message+`
     }
   }
 
-  @media (max-width: 440px) {
+  @media screen and (max-width: 440px) {
     align-items: center;
   }
 `,eC=Nt.section`
@@ -135,7 +135,7 @@ Error generating stack: `+i.message+`
     }
   }
 
-  @media (max-width: 440px) {
+  @media screen and (max-width: 440px) {
     width: 20rem;
 
     padding-top: 2rem;
@@ -153,7 +153,7 @@ Error generating stack: `+i.message+`
   height: 75rem;
   margin: 3rem 1rem 3rem 1rem;
 
-  @media (max-width: 440px) {
+  @media screen and (max-width: 440px) {
     border-left: 0px solid black;
     border-bottom: 2px solid black;
     height: 1px;
