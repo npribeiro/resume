@@ -50,6 +50,17 @@ export const PersonalCard = styled.div`
         color: ${({ theme }) => theme['base-violet']};
       }
     }
+    @media screen and (max-width: 440px) {
+      gap: 0.1rem;
+      margin-top: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 440px) {
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+    padding-right: 2rem;
   }
 `
 
@@ -104,10 +115,10 @@ export const InfoContainer = styled.section`
   @media screen and (max-width: 440px) {
     width: 20rem;
 
-    padding-top: 2rem;
+    padding-top: 3rem;
     padding-left: 2rem;
-    padding-bottom: 2rem;
-    padding-right: 1rem;
+    padding-bottom: 3rem;
+    padding-right: 2rem;
 
     h1 {
       font-size: 30px;
