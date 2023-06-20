@@ -72,6 +72,7 @@ Error generating stack: `+i.message+`
   display: flex;
   flex-direction: column;
   gap: 32px;
+  position: relative;
 
   background-color: ${({theme:e})=>e["base-profile"]};
 
@@ -133,6 +134,7 @@ Error generating stack: `+i.message+`
   padding-right: 3rem;
 
   display: flex;
+  position: relative;
   flex-direction: column;
   gap: 32px;
   background-color: ${({theme:e})=>e["base-profile"]};
@@ -163,13 +165,17 @@ Error generating stack: `+i.message+`
   border-left: 2px solid black;
   height: 75rem;
   margin: 3rem 1rem 3rem 1rem;
+  display: flex;
+  position: relative;
 
   @media screen and (max-width: 440px) {
+    display: flex;
+    position: relative;
     border-left: 0px solid black;
     border-bottom: 2px solid black;
     height: 1px;
     width: 300px;
-    margin: 2rem 0rem 2rem 2rem;
+    margin: 2rem 2rem 2rem 2rem;
   }
 `;var rC=T.exports.createContext({color:"currentColor",size:"1em",weight:"regular",mirrored:!1}),li=function(t,r,n){var o=n.get(t);return o?o(r):(console.error('Unsupported icon weight. Choose from "thin", "light", "regular", "bold", "fill", or "duotone".'),null)};function Nv(e,t){if(e==null)return{};var r={},n=Object.keys(e),o,i;for(i=0;i<n.length;i++)o=n[i],!(t.indexOf(o)>=0)&&(r[o]=e[o]);return r}var pu={exports:{}},hu={};/**
  * @license React
